@@ -1,0 +1,41 @@
+/* START PAGE */
+.start-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.title {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    font-weight: var(--fw-reg);
+    margin-bottom: 2em;
+}
+
+.start-btn {
+    font-weight: var(--fw-med);
+    color: var(--clr-light);
+    border: none;
+    border-radius: 1.06em;
+    padding: 1.5em 3.75em;
+    background: var(--clr-dark);
+}
+
+.title,
+.subtitle {
+    color: var(--clr-dark);
+}
+
+.subtitle,
+.start-btn {
+    font-family: var(--ff-primary);
+    font-size: 1rem;
+}

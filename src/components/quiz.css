@@ -1,0 +1,127 @@
+/* QUIZ PAGE */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 1em 1em;
+}
+
+.question {
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 1rem;
+    color: var(--clr-dark);
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+hr {
+    background: #DBDEF0;
+    margin: 1.25em auto;
+}
+
+/* ANSWERS */
+.answer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.answer {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-med);
+    font-size: .625rem;
+    text-align: center;
+    color: var(--clr-dark);
+    border: var(--answer-border);
+    border-radius: var(--answer-radius);
+    padding: .35em 1em;
+}
+
+.hoverable:hover {
+    cursor: pointer;
+}
+
+.selected-answer {
+    background-color: #D6DBF5;
+    border: none;
+}
+
+.correct-answer {
+    background-color: #94D7A2;
+    border: none;
+}
+
+.wrong-answer {
+    background-color: #F8BCBC;
+    border: none;
+}
+
+.unselected {
+    background-color: transparent;
+    border: var(--answer-border)
+}
+
+/* QUIZ RESULTS */
+.quiz-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit-quiz-btn {
+    font-family: var(--ff-primary);
+    font-size: 0.64rem;
+    font-weight: var(--fw-semibold);
+    color: var(--clr-light);
+    background-color: #4D5B9E;
+    border: none;
+    border-radius: var(--answer-radius);
+    padding: 1em 2em;
+}
+
+.submit-quiz-btn:hover {
+    cursor: pointer;
+}
+
+.score {
+    font-size: 1rem;
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-dark);
+}
+
+@media screen and (min-width: 500px) {
+    .quiz-container {
+        margin: 2.5em auto 0 auto;
+    }
+
+    hr {
+        margin: 1.5em auto;
+    }
+
+    .quiz-results {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .question{
+        font-size: 1.35rem;
+    }
+
+    .answer{
+        font-size: .9rem;
+    }
+
+    .submit-quiz-btn{
+        font-size: .9rem;
+    }
+
+    .score{
+        font-size: 1.35rem;
+    }
+}
